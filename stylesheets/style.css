@@ -845,6 +845,7 @@ hr {
   .mv__girl {
     position: absolute;
     left: 0;
+    bottom: 0;
     width: 650px;
   }
   .mv__logo {
