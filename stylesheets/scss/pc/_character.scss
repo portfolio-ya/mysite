@@ -1,0 +1,109 @@
+.character {
+  @include section;
+  background-image: linear-gradient(0deg, rgba(255, 240, 183, 1), rgba(255, 233, 151, 1) 35%, rgba(255, 217, 79, 1) 65%, rgba(255, 214, 67, 1));
+  &__inner {
+    @include inner;
+    max-width: 1000px;
+  }
+
+  &__content {
+    position: relative;
+    margin-top: 35px;
+    font-size: $font-base;
+    color: $black;
+    letter-spacing: -0.6px;
+    height: 700px;
+    z-index: 2;
+  }
+
+  &__text {
+    box-sizing: border-box;
+    font-size: $font-large;
+    white-space: nowrap;
+  }
+
+  &__top {
+    position: absolute;
+    top: 100px;
+    color: $white;
+    line-height: $line1;
+  }
+
+  &__name-ja {
+    margin-left: -9px;
+    font-size: $font-heading01;
+  }
+
+  &__name-en {
+    margin-top: 8px;
+    color: $black;
+    letter-spacing:7px;
+    font-weight: $extra;
+  }
+
+  &__name-cv {
+    margin-top: 6px;
+  }
+
+  &__bottom {
+    position: absolute;
+    top: 250px;
+  }
+
+  &__line {
+    margin-top: 10px;
+    width: fit-content;
+    padding: 8px;
+    background: $white;
+    font-size: $font-heading03;
+    font-weight: $extra;
+    line-height: $line1;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__desc {
+    margin-top: 20px;
+    font-size: $font-base;
+  }
+
+  &__image-box {
+    display: flex;
+    align-items: end;
+    position: absolute;
+    top: 0;
+    right: -78px;
+    z-index: -1;
+  }
+
+  &__image {
+    height: 700px;
+    transition: all 0.5s;
+    opacity: 0.6;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:nth-child(2) {
+      opacity: 1;
+    }
+
+    &:nth-child(3) {
+      height: 400px;
+      margin-left: -60px;
+    }
+
+    &:nth-child(4) {
+      height: 400px;
+      margin-left: -33px;
+    }
+
+    &:nth-child(5) {
+      height: 400px;
+      margin-left: -33px;
+    }
+  }
+}

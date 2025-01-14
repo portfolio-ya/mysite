@@ -1,0 +1,26 @@
+// section
+@mixin section() {
+  position: relative;
+  font-weight: $bold;
+  background-image: linear-gradient(0deg, rgba(245, 200, 212, 1), rgba(255, 90, 137, 1));
+  line-height: $line2;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: vw(20);
+    height: vw(2);
+    width: 100%;
+    background: $white;
+  }
+
+}
+
+// inner
+@mixin inner() {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: vw(45) vw(16) vw(60);
+  max-width: vw(400);
+  line-height: $line4;
+}

@@ -1,0 +1,33 @@
+/* --------------------------------------------------
+ ※※※※※※※※※※※※※※※※※※※※※※※※
+ 共通ページ用
+ このファイルはsassでコンパイルされています
+ 以下の内容を変更したい場合は構成するscssファイルを
+ ご確認ください
+ ※※※※※※※※※※※※※※※※※※※※※※※※
+-------------------------------------------------- */
+
+// import
+@import "reset";
+
+// definitions
+@import "variables";
+
+@media screen and (width <= 766.9px) {
+  // 画面サイズが959.9pxまではここを読み込む
+  // definitions
+  @import "sp/function", "sp/variables", "sp/mixin", "sp/character", "sp/footer", "sp/gallery", "sp/heading", "sp/mv", "sp/parts","sp/spec", "sp/story", "sp/tag";
+
+  // ayout
+  @import "sp/base";
+}
+
+@media screen and (width >= 767px), print {
+  // 画面サイズが960pxからはここを読み込む
+
+  // definitions
+  @import "pc/function", "pc/variables", "pc/mixin", "pc/character", "pc/footer", "pc/gallery", "pc/heading", "pc/mv", "pc/parts", "pc/spec", "pc/story", "pc/tag";
+
+  // layout
+  @import "pc/base";
+}

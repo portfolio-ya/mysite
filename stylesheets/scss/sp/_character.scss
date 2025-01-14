@@ -1,0 +1,74 @@
+.character {
+  @include section;
+  background-image: linear-gradient(0deg, rgba(255, 240, 183, 1), rgba(255, 233, 151, 1) 35%, rgba(255, 217, 79, 1) 65%, rgba(255, 214, 67, 1));
+  &__inner {
+    @include inner;
+  }
+
+  &__content {
+    position: relative;
+    margin-top: vw(20);
+    font-size: $font-small;
+    color: $black;
+    letter-spacing: vw(0.6);
+    height: vw(368);
+    z-index: 2;
+  }
+
+  &__text {
+    box-sizing: border-box;
+    font-size: $font-base;
+    white-space: nowrap;
+  }
+
+  &__top {
+    color: $white;
+    line-height: $line1;
+  }
+
+  &__name-ja {
+    margin-left: vw(-4);
+    font-size: $font-heading02;
+  }
+
+  &__name-en {
+    margin-top: vw(4);
+    color: $black;
+    letter-spacing: 0;
+  }
+
+  &__name-cv {
+    margin-top: vw(3);
+  }
+
+  &__bottom {
+    position: absolute;
+    bottom: 0;
+  }
+
+  &__line {
+    margin-top: vw(5);
+    width: fit-content;
+    padding: vw(4);
+    background: $white;
+    font-weight: $extra;
+    line-height: $line1;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__desc {
+    margin-top: vw(20);
+    font-size: $font-small;
+  }
+
+  &__image-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: vw(244);
+    z-index: -1;
+  }
+}

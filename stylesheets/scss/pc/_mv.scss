@@ -1,0 +1,67 @@
+.mv {
+  overflow: hidden;
+  position: relative;
+  height: calc(100vh - 100px);
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("../images/bg_pc.png");
+    width: 10000px;
+    height: 1000px;
+    background-size: contain;
+  }
+
+  &__inner {
+    position: absolute;
+    width: 1100px;
+    height: calc(100vh - 100px);
+    margin: 0 auto;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__girl {
+    position: absolute;
+    left: 0;
+    width: 650px;
+  }
+
+  &__logo {
+    position: absolute;
+    right: 0;
+    bottom: 120px;
+    width: 650px;
+    animation: fluffyHorizon 7s ease-in-out infinite alternate-reverse;
+  }
+}
+
+@keyframes fuluffyVertical {
+  0% {
+    transform: translate3d(0, 10px, 0);
+  }
+
+  50% {
+    transform: translate3d(0, -10px, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 10px, 0);
+  }
+}
+
+@keyframes fluffyHorizon {
+  0% {
+    transform: translate3d(5px, 0, 0) rotate(-5deg);
+  }
+
+  50% {
+    transform: translate3d(-5px, 0, 0) rotate(5deg);
+  }
+
+  100% {
+    transform: translate3d(5px, 0, 0) rotate(-5deg);
+  }
+}

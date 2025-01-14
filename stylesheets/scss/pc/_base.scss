@@ -1,0 +1,101 @@
+/* ------------------------------
+  共通レイアウト
+------------------------------ */
+html {
+  overflow: scroll;
+  font-size: 10px;
+}
+
+body {
+  box-sizing: border-box;
+  font: #{$font-base} / $line4 $family;
+  font-weight: $normal;
+  color: $black;
+  letter-spacing: 0.01em;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  image-rendering: auto;
+  min-width: 1200px;
+
+  .is-fixed & {
+    position: fixed;
+    width: 100%;
+  }
+}
+
+a {
+  color: $black;
+  transition: $trans;
+
+  &:hover {
+    color: $black;
+    text-decoration: none;
+  }
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+}
+
+button {
+  font-family: $family;
+  font-size: $font-base;
+  font-weight: $normal;
+  cursor: pointer;
+  background-color: $white;
+  transition: $trans;
+}
+
+input,
+select,
+textarea {
+  font-family: $family;
+  font-size: $font-base;
+  font-weight: $normal;
+  appearance: none;
+  appearance: none;
+  cursor: pointer;
+  border: 0;
+}
+
+// .container {}
+
+// .main {}
+
+// スマホ向け
+.only-sp {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+.point-blue {
+  color: $sub-blue;
+}
+
+.point-pink {
+  color: $sub-pink;
+}
+
+/* ふわっとした動き↓ */
+.fadeUpTrigger{
+  opacity: 0;
+}
+
+.fadeUp {
+  animation-name: fadeUpAnime;
+  animation-duration:2s;
+  animation-fill-mode:forwards;
+  opacity: 0;
+}
+@keyframes fadeUpAnime{
+from {
+  opacity: 0;
+  transform: translateY(100px);
+}
+to {
+  opacity: 1;
+  transform: translateY(0);
+}
+}
