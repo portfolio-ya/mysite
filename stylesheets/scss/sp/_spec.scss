@@ -1,0 +1,55 @@
+.spec {
+  @include section;
+  background-image: linear-gradient(0deg, rgba(255, 204, 218, 1), rgba(255, 246, 249, 1) 48%, rgba(248, 248, 248, 1) 85%);
+
+  &__inner {
+    @include inner;
+    padding: vw(45) vw(16);
+    max-width: vw(260);
+  }
+
+  &__content {
+    box-sizing: border-box;
+    margin-top: vw(20);
+    font-size: $font-small;
+    color: $white;
+    letter-spacing: vw(-0.6);
+    line-height: $line3;
+  }
+
+  &__image {
+    margin: vw(35) auto 0;
+    width: vw(140);
+    filter: drop-shadow(0 vw(5) vw(2) rgba(0, 0, 0, 0.25));
+  }
+
+  &__data {
+    display: flex;
+    margin-top: vw(5);
+    width: 100%;
+
+    &:first-child {
+      margin: 0;
+    }
+  }
+
+  &__data-term {
+    color: $gray;
+    width: vw(80);
+  }
+
+  &__data-desc {
+    box-sizing: border-box;
+    padding: vw(2) vw(15) vw(3);
+    width: fit-content;
+    background: $main-pink;
+
+    &--ye {
+      background: $main-yellow;
+    }
+
+    &--bl {
+      background: $main-blue;
+    }
+  }
+}

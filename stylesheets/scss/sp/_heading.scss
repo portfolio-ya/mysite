@@ -1,0 +1,12 @@
+.heading {
+  margin: 0 auto;
+  font-family: $family-en;
+  font-size: $font-heading01;
+  color: $white;
+  text-align: center;
+  line-height: $line1;
+
+  &--sub {
+    color: $main-pink;
+  }
+}

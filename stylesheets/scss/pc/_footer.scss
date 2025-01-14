@@ -1,0 +1,13 @@
+.footer {
+    padding: 10px 0;
+    color: $gray;
+    font-size: $font-small;
+    text-align: center;
+    line-height: $line4;
+    font-weight: $extra;
+
+    &__en {
+        font-family: $family-en;
+        font-size: $font-large;
+    }
+}

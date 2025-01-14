@@ -1,0 +1,37 @@
+.story {
+  @include section;
+
+  &__inner {
+    @include inner;
+  }
+
+  &__content {
+    box-sizing: border-box;
+    margin-top: 35px;
+    padding: 40px 24px 30px;
+    border-radius: 28px;
+    font-size: $font-base;
+    background: rgba(255, 255, 255, 0.25);
+    color: $white;
+  }
+
+  &__text-box {
+    margin: 0 auto;
+    max-width: 500px;
+    text-align: center;
+    letter-spacing: 1.5px;
+  }
+
+  &__text {
+    margin-top: 20px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__image {
+    margin: 20px auto 0;
+    width: 120px;
+  }
+}

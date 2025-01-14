@@ -1,0 +1,36 @@
+.story {
+  @include section;
+
+  &__inner {
+    @include inner;
+  }
+
+  &__content {
+    box-sizing: border-box;
+    margin-top: vw(20);
+    padding: vw(40) vw(16) vw(30);
+    border-radius: vw(28);
+    font-size: $font-base;
+    background: rgba(255, 255, 255, 0.25);
+    color: $white;
+  }
+
+  &__text-box {
+    margin: 0 auto;
+    max-width: vw(300);
+    letter-spacing: vw(-0.6);
+  }
+
+  &__text {
+    margin-top: vw(10);
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__image {
+    margin: vw(20) auto 0;
+    width: vw(200);
+  }
+}

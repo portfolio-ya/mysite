@@ -1,0 +1,27 @@
+.gallery {
+  @include section;
+  background-image: linear-gradient(0deg, rgba(248, 248, 248, 1), rgba(52, 194, 237, 1) 100%, rgba(217, 239, 246, 1) 65%);
+
+  &__inner {
+    @include inner;
+    max-width: vw(435);
+  }
+
+  &__content {
+    box-sizing: border-box;
+    margin-top: vw(20);
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: vw(15) vw(10);
+
+  }
+
+  &__image {
+    width: vw(150);
+    border: vw(4) solid $white;
+  }
+}

@@ -1,0 +1,88 @@
+html {
+  overflow: scroll;
+  font-family: $family;
+  font-size: 12px;
+  scrollbar-width: none; // table-scroll firefox対応
+  -ms-overflow-style: none; // table-scroll ie対応
+}
+
+body {
+  font: #{$font-base} / $line4 $family;
+  font-weight: normal;
+  -webkit-font-size-adjust: 100%;
+  color: $black;
+  letter-spacing: 0.01rem;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  image-rendering: auto;
+  text-size-adjust: 100%;
+}
+
+a {
+  color: $black;
+  transition: $trans;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+  cursor: pointer;
+  image-rendering: auto;
+
+  // cursor: pointer;
+}
+
+button {
+  font-family: $family;
+  font-size: $font-base;
+  cursor: pointer;
+  background-color: $black;
+  transition: $trans;
+}
+
+input,
+select,
+textarea {
+  font-family: $family;
+  font-size: $font-base;
+  appearance: none;
+  appearance: none;
+  cursor: pointer;
+  border: 0;
+}
+
+.only-pc {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+.point-blue {
+  color: $sub-blue;
+}
+
+.point-pink {
+  color: $sub-pink;
+}
+
+/* ふわっとした動き↓ */
+.fadeUpTrigger{
+  opacity: 0;
+}
+
+.fadeUp {
+  animation-name: fadeUpAnime;
+  animation-duration:2s;
+  animation-fill-mode:forwards;
+  opacity: 0;
+}
+@keyframes fadeUpAnime{
+from {
+  opacity: 0;
+  transform: translateY(100px);
+}
+to {
+  opacity: 1;
+  transform: translateY(0);
+}
+}

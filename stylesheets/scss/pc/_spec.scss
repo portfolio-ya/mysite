@@ -1,0 +1,54 @@
+.spec {
+  @include section;
+  background-image: linear-gradient(0deg, rgba(255, 204, 218, 1), rgba(255, 246, 249, 1) 48%, rgba(248, 248, 248, 1) 85%);
+
+  &__inner {
+    @include inner;
+    max-width:  for-rem(310);
+  }
+
+  &__content {
+    box-sizing: border-box;
+    margin-top: for-rem(35);
+    font-size: $font-large;
+    color: $white;
+    letter-spacing: -0.6px;
+    line-height: $line3;
+  }
+
+  &__image {
+    margin: 35px auto 0;
+    width: 200px;
+    filter: drop-shadow(0 5px 2px rgba(0, 0, 0, 0.25));
+  }
+
+  &__data {
+    display: flex;
+    margin-top: 15px;
+    width: 100%;
+
+    &:first-child {
+      margin: 0;
+    }
+  }
+
+  &__data-term {
+    color: $gray;
+    width: 100px;
+  }
+
+  &__data-desc {
+    box-sizing: border-box;
+    padding: 2px 15px 3px;
+    width: fit-content;
+    background: $main-pink;
+
+    &--ye {
+      background: $main-yellow;
+    }
+
+    &--bl {
+      background: $main-blue;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.tag {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  height: 60px;
+  font-size: $font-base;
+  color: $sub-pink;
+  border-top: 2px solid $sub-pink;
+  border-bottom: 2px solid $sub-pink;
+  white-space: nowrap;
+  background: $white;
+
+  &__box {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: $line1;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+  }
+
+  &__item-sharp {
+    font-size: $font-base;
+  }
+
+  &__item-dot {
+    display: inline-block;
+    width: 2px;
+    height: 15px;
+    padding-left: 50px;
+  }
+}

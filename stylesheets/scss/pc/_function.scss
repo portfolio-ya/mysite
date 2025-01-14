@@ -1,0 +1,34 @@
+// _function.scss
+@use "sass:math";
+
+// z-index
+@function z($name, $map: $z-map) {
+  @return list.index($map, $name);
+}
+
+// 使い方
+// variablesに定義
+//  .header {
+//  z-index: z(header); 1が入力される
+//  }
+
+// VW算出
+@function vw($size) {
+  $value: math.div($size, $base-width) * 100;
+
+  // 0.7320644217
+  @return math.div(math.round($value * 1000), 1000) + vw;
+
+  // 四捨五入・小数点3桁に調整
+}
+
+// rem算出
+@function for-rem($size) {
+  $value: math.div($size, 10);
+
+  @return $value + rem;
+}
+
+@function percent($size, $base-width: 1366) {
+  @return math.percentage(math.div($size, $base-width));
+}
