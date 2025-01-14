@@ -1,11 +1,312 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>リニューアル卒業制作HP</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+    <!-- フォント NotoSans Alumni Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet" />
+
+    <!-- 画像拡大 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" defer type="text/javascript"></script>
+
+    <title>【公式】メシマズ卒業します!!</title>
+  </head>
+  <body>
+    <!-- メインビジュアル start -->
+    <section class="mv fadeUpTrigger">
+      <!-- パーツ start -->
+      <div class="parts">
+        <ul class="parts__list">
+          <li class="parts__item parts__item--knife">
+            <span class="parts__item-vertical">
+              <span class="parts__item-horizon">
+                <img src="./images/knife.png" alt="包丁" />
+              </span>
+            </span>
+          </li>
+          <li class="parts__item parts__item--ribbon">
+            <span class="parts__item-vertical">
+              <span class="parts__item-horizon">
+                <img src="./images/ribbon.png" alt="リボン" />
+              </span>
+            </span>
+          </li>
+          <li class="parts__item parts__item--wing">
+            <span class="parts__item-vertical">
+              <span class="parts__item-horizon">
+                <img src="./images/wing.png" alt="羽" />
+              </span>
+            </span>
+          </li>
+          <li class="parts__item parts__item--apron">
+            <span class="parts__item-vertical">
+              <span class="parts__item-horizon">
+                <img src="./images/apron.png" alt="エプロン" />
+              </span>
+            </span>
+          </li>
+          <li class="parts__item parts__item--heart">
+            <span class="parts__item-vertical">
+              <span class="parts__item-horizon">
+                <img src="./images/heart.png" alt="ハート" />
+              </span>
+            </span>
+          </li>
+        </ul>
+      </div>
+      <!-- パーツ end -->
+      <div class="mv__inner">
+        <div class="mv__girl only-pc"><img src="./images/mv_sp.png" alt="メインビジュアル" /></div>
+        <h1 class="mv__logo only-pc"><img src="./images/logo.png" alt="メシマズ卒業します!!" /></h1>
+      </div>
+    </section>
+    <!-- メインビジュアル end -->
+
+    <!-- タグ start -->
+    <div class="tag fadeUpTrigger">
+      <ul class="tag__box slider">
+        <li class="tag__item">
+          <div class="tag__content">
+            <span class="tag__item-sharp">#</span>かわいい
+            <span class="tag__item-dot"><img src="./images/dot.svg" alt="装飾" /></span>
+          </div>
+        </li>
+        <li class="tag__item">
+          <div class="tag__content">
+            <span class="tag__item-sharp">#</span>火を使わない
+            <span class="tag__item-dot"><img src="./images/dot.svg" alt="装飾" /></span>
+          </div>
+        </li>
+        <li class="tag__item">
+          <div class="tag__content">
+            <span class="tag__item-sharp">#</span>和食
+            <span class="tag__item-dot"><img src="./images/dot.svg" alt="装飾" /></span>
+          </div>
+        </li>
+        <li class="tag__item">
+          <div class="tag__content">
+            <span class="tag__item-sharp">#</span>1時間で
+            <span class="tag__item-dot"><img src="./images/dot.svg" alt="装飾" /></span>
+          </div>
+        </li>
+        <li class="tag__item">
+          <div class="tag__content">
+            <span class="tag__item-sharp">#</span>秘伝の技
+            <span class="tag__item-dot"><img src="./images/dot.svg" alt="装飾" /></span>
+          </div>
+        </li>
+        <li class="tag__item">
+          <div class="tag__content">
+            <span class="tag__item-sharp">#</span>子供でもできる
+            <span class="tag__item-dot"><img src="./images/dot.svg" alt="装飾" /></span>
+          </div>
+        </li>
+        <li class="tag__item">
+          <div class="tag__content">
+            <span class="tag__item-sharp">#</span>映える
+            <span class="tag__item-dot"><img src="./images/dot.svg" alt="装飾" /></span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- タグ end -->
+
+    <!-- 以下セクション同共通mixinで作成 -->
+
+    <!-- ストーリー start -->
+    <section class="story fadeUpTrigger">
+      <div class="story__inner">
+        <h2 class="heading">STORY</h2>
+        <div class="story__content">
+          <div class="story__text-box">
+            <p class="story__text">
+              料理研究会に所属している<span class="point-blue">あなた</span>はもうすぐ<br />
+              夏休みを迎えようとしていた。
+            </p>
+            <p class="story__text">
+              そんな中、思わぬ来訪者の呼び出しにより<br />
+              <span class="point-pink">学校一の人気者・日向茜</span>に料理を教える事に。
+            </p>
+            <p class="story__text">
+              すぐにでも終わると思っていたその時間は<br />
+              彼女の劇的な腕前によって思わぬ展開を広げ...？
+            </p>
+            <p class="story__text">メシマズ×︎ギャルと織りなす、<span class="point-blue">卒業系</span><span class="point-pink">ラブコメ!!</span></p>
+            <div class="story__image">
+              <!-- <img src="./images/story_image_sp.png" alt="女の子のイラスト" /> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ストーリー end -->
+
+    <!-- キャラクター start -->
+    <section class="character fadeUpTrigger">
+      <div class="character__inner">
+        <h2 class="heading">CHARACTER</h2>
+        <div class="character__content">
+          <div class="character__text">
+            <div class="character__top">
+              <p class="character__name-ja">日向 茜</p>
+              <p class="character__name-en">AKANE HINATA</p>
+              <p class="character__name-cv">CV　なし</p>
+            </div>
+            <div class="character__bottom">
+              <p class="character__line">あたし、お願いがあって君を呼んだの</p>
+              <p class="character__line">せんせー、どうしたの?</p>
+              <p class="character__line">あ、ねぇ部長写真撮って〜!</p>
+              <p class="character__desc">
+                同級生であり学年一の人気者<br />
+                <span class="point-blue">あなた</span>の元に突然現れ、ある<span class="point-pink">相談事</span>を持ちかける。
+              </p>
+            </div>
+          </div>
+          <div class="character__image-box">
+            <span class="character__image"><img class="only-sp" src="./images/girl_sp.png" alt="立ち絵" /></span>
+
+            <!-- 以下PC -->
+            <span class="character__image" id="move_1">
+              <img class="only-pc" id="seihuku_1" src="./images/d_1.png" alt="立ち絵" />
+            </span>
+            <span class="character__image" id="move_2">
+              <img class="only-pc" id="seihuku_2" onclick="st_move_1()" src="./images/d_2.png" alt="立ち絵" />
+            </span>
+            <span class="character__image" id="move_3">
+              <img class="only-pc" id="seihuku_3" onclick="st_move_2()" src="./images/d_3.png" alt="立ち絵" />
+            </span>
+            <span class="character__image" id="move_4">
+              <img class="only-pc" id="seihuku_4" onclick="st_move_3()" src="./images/d_4.png" alt="立ち絵" />
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- キャラクター end -->
+
+    <!-- ギャラリー start -->
+    <section class="gallery fadeUpTrigger">
+      <div class="gallery__inner">
+        <h2 class="heading">GALLERY</h2>
+        <div class="gallery__content">
+          <ul class="gallery__list">
+            <li class="gallery__image">
+              <a href="./images/thum_1.png" data-lightbox="abc" data-title="スチル1"><img src="./images/thum_1.png" alt="スチル1" /></a>
+            </li>
+            <li class="gallery__image">
+              <a href="./images/thum_2.png" data-lightbox="abc" data-title="スチル2"><img src="./images/thum_2.png" alt="スチル2" /></a>
+            </li>
+            <li class="gallery__image">
+              <a href="./images/thum_3.png" data-lightbox="abc" data-title="スチル3"><img src="./images/thum_3.png" alt="スチル3" /></a>
+            </li>
+            <li class="gallery__image">
+              <a href="./images/thum_4.png" data-lightbox="abc" data-title="スチル4"><img src="./images/thum_4.png" alt="スチル4" /></a>
+            </li>
+            <li class="gallery__image">
+              <a href="./images/thum_5.png" data-lightbox="abc" data-title="スチル5"><img src="./images/thum_5.png" alt="スチル5" /></a>
+            </li>
+            <li class="gallery__image">
+              <a href="./images/thum_6.png" data-lightbox="abc" data-title="スチル6"><img src="./images/thum_6.png" alt="スチル6" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- ギャラリー end -->
+
+    <!-- スペック start -->
+    <section class="spec fadeUpTrigger">
+      <!-- パーツ start -->
+      <div class="parts parts--spec">
+        <ul class="parts__list">
+          <li class="parts__item parts__item--knife">
+            <span class="parts__item-vertical">
+              <span class="parts__item-horizon">
+                <img src="./images/knife.png" alt="包丁" />
+              </span>
+            </span>
+          </li>
+          <li class="parts__item parts__item--ribbon">
+            <span class="parts__item-vertical">
+              <span class="parts__item-horizon">
+                <img src="./images/ribbon.png" alt="リボン" />
+              </span>
+            </span>
+          </li>
+        </ul>
+      </div>
+      <!-- パーツ end -->
+      <div class="spec__inner">
+        <h2 class="heading heading--sub">SPEC</h2>
+        <div class="spec__content">
+          <div class="spec__data">
+            <p class="spec__data-term">タイトル：</p>
+            <p class="spec__data-desc">メシマズ卒業します!!</p>
+          </div>
+          <div class="spec__data">
+            <p class="spec__data-term">OS：</p>
+            <p class="spec__data-desc spec__data-desc--ye">Windows(Mac非対応)</p>
+          </div>
+          <div class="spec__data">
+            <p class="spec__data-term">攻略人数：</p>
+            <p class="spec__data-desc spec__data-desc--bl">1人</p>
+          </div>
+          <div class="spec__data">
+            <p class="spec__data-term">配布方法：</p>
+            <p class="spec__data-desc">DLのみ</p>
+          </div>
+          <div class="spec__data">
+            <p class="spec__data-term">制作：</p>
+            <!-- <p class="spec__data-desc spec__data-desc--ye">阿部・谷口・馬場</p> -->
+            <p class="spec__data-desc spec__data-desc--ye">チーム卒業制作</p>
+          </div>
+          <div class="spec__image">
+            <img src="./images/logo.png" alt="ロゴ" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- スペック end -->
+
+    <footer class="footer"><span class="footer__en">©2023</span>卒業制作</footer>
+    <!-- Jクエリ↓ -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- Js↓ -->
+    <script src="./javascript/ttg.js"></script>
+    <!-- フェードイン -->
+    <!-- ポップアップ-->
+    <script src="./javascript/click.js"></script>
+
+    <!-- スリック start -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  </body>
+
+  <script>
+    $(".slider").slick({
+      autoplaySpeed: 0,
+      speed: 5500,
+      autoplaySpeed: 0,
+      centerMode: false,
+      infinite: true, // 無限スクロール
+      slidesToShow: 1, // 一度に表示するスライド数
+      slidesToScroll: 1, // 一度のスクロールで移動するスライド数
+      autoplay: true, // 自動再生を有効
+      // speed: sliderSpeed,
+      cssEase: "linear", // スライドの動き方
+      arrows: false, // 矢印ナビゲーションの表示/非表示
+      dots: false, // ドットナビゲーションの表示/非表示
+      variableWidth: true, // 可変幅のスライド
+      pauseOnHover: false, // ホバー時に自動再生を停止しない
+      pauseOnHover: false, //追加（ホバーしても止まらないように
+    });
+  </script>
 </html>
