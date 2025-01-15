@@ -304,7 +304,7 @@ hr {
   .mv {
     overflow: hidden;
     position: relative;
-    height: 166.667vw;
+    height: 152.778vw;
   }
   .mv::before {
     content: "";
@@ -317,7 +317,7 @@ hr {
   }
   .mv__inner {
     position: relative;
-    height: 166.667vw;
+    height: 152.778vw;
   }
   .mv__inner::before {
     content: "";
