@@ -1,7 +1,7 @@
 .mv {
   overflow: hidden;
   position: relative;
-  height: vw(550);
+  height: calc(100svh - vw(70));
 
   &::before {
     content: "";
@@ -15,7 +15,7 @@
 
   &__inner {
     position: relative;
-    height: vw(550);
+    height: calc(100svh - vw(70));
 
     &::before {
       content: "";

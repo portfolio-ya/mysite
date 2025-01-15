@@ -304,7 +304,7 @@ hr {
   .mv {
     overflow: hidden;
     position: relative;
-    height: 152.778vw;
+    height: calc(100svh - 19.444vw);
   }
   .mv::before {
     content: "";
@@ -317,7 +317,7 @@ hr {
   }
   .mv__inner {
     position: relative;
-    height: 152.778vw;
+    height: calc(100svh - 19.444vw);
   }
   .mv__inner::before {
     content: "";
@@ -358,7 +358,7 @@ hr {
     filter: drop-shadow(0 1.389vw 0.556vw rgba(0, 0, 0, 0.25));
   }
   .parts__item:nth-child(1) {
-    top: 3%;
+    top: 8.333vw;
     right: 1.389vw;
     width: 27.778vw;
   }
@@ -368,7 +368,7 @@ hr {
     width: 26.389vw;
   }
   .parts__item:nth-child(2) {
-    top: 15%;
+    top: 36.111vw;
     left: 1.389vw;
     width: 27.778vw;
   }
@@ -378,17 +378,17 @@ hr {
     width: 26.389vw;
   }
   .parts__item:nth-child(3) {
-    top: 35%;
+    top: 69.444vw;
     right: 0vw;
     width: 22.222vw;
   }
   .parts__item:nth-child(4) {
-    bottom: 40%;
+    bottom: 47.222vw;
     left: 1.389vw;
     width: 25vw;
   }
   .parts__item:nth-child(5) {
-    bottom: 30%;
+    bottom: 25vw;
     right: 4.167vw;
     width: 16.667vw;
   }
