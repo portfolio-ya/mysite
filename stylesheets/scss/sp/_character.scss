@@ -3,6 +3,7 @@
   background-image: linear-gradient(0deg, rgba(255, 240, 183, 1), rgba(255, 233, 151, 1) 35%, rgba(255, 217, 79, 1) 65%, rgba(255, 214, 67, 1));
   &__inner {
     @include inner;
+    font-weight: $normal;
   }
 
   &__content {
@@ -51,7 +52,7 @@
     width: fit-content;
     padding: vw(4);
     background: $white;
-    font-weight: $extra;
+    font-weight: $bold;
     line-height: $line1;
 
     &:first-child {

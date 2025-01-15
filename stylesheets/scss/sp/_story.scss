@@ -1,5 +1,6 @@
 .story {
   @include section;
+  font-weight: $normal;
 
   &__inner {
     @include inner;

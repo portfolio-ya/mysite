@@ -6,6 +6,7 @@
     @include inner;
     padding: vw(45) vw(16);
     max-width: vw(270);
+    font-weight: $normal;
   }
 
   &__content {
