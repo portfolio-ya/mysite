@@ -10,7 +10,7 @@
     margin-top: vw(20);
     font-size: $font-small;
     color: $black;
-    letter-spacing: vw(0.6);
+    // letter-spacing: vw(0.6);
     height: vw(368);
     z-index: 2;
   }
@@ -34,7 +34,7 @@
   &__name-en {
     margin-top: vw(4);
     color: $black;
-    letter-spacing: 0;
+    // letter-spacing: 0;
   }
 
   &__name-cv {

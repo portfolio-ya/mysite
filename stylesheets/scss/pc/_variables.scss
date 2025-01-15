@@ -1,5 +1,11 @@
+@font-face {
+  font-family: "corporatelogo";
+  src: url("../font/bold.woff") format("woff"),
+  url("../font/medium.woff") format("woff");
+}
+
 // フォントファミリー
-$family: 'Noto Sans JP', sans-serif;
+$family: "corporatelogo","Noto Sans JP", sans-serif;
 $family-en: "Alumni Sans", serif;
 
 // フォントサイズ

@@ -4,7 +4,7 @@
 
   &__inner {
     @include inner;
-    max-width:  for-rem(310);
+    max-width:  for-rem(350);
   }
 
   &__content {
@@ -12,7 +12,7 @@
     margin-top: for-rem(35);
     font-size: $font-large;
     color: $white;
-    letter-spacing: -0.6px;
+    // letter-spacing: -0.6px;
     line-height: $line3;
   }
 
@@ -34,7 +34,7 @@
 
   &__data-term {
     color: $gray;
-    width: 100px;
+    width: 120px;
   }
 
   &__data-desc {

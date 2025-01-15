@@ -5,7 +5,7 @@
   &__inner {
     @include inner;
     padding: vw(45) vw(16);
-    max-width: vw(260);
+    max-width: vw(270);
   }
 
   &__content {
@@ -13,7 +13,7 @@
     margin-top: vw(20);
     font-size: $font-small;
     color: $white;
-    letter-spacing: vw(-0.6);
+    // letter-spacing: vw(-0.6);
     line-height: $line3;
   }
 

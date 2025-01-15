@@ -162,6 +162,10 @@ hr {
 }
 
 @media screen and (width <= 766.9px) {
+  @font-face {
+    font-family: "corporatelogo";
+    src: url("../font/bold.woff") format("woff"), url("../font/medium.woff") format("woff");
+  }
   .character {
     position: relative;
     font-weight: 700;
@@ -189,7 +193,6 @@ hr {
     margin-top: 5.556vw;
     font-size: 3.333vw;
     color: #000;
-    letter-spacing: 0.167vw;
     height: 102.222vw;
     z-index: 2;
   }
@@ -209,7 +212,6 @@ hr {
   .character__name-en {
     margin-top: 1.111vw;
     color: #000;
-    letter-spacing: 0;
   }
   .character__name-cv {
     margin-top: 0.833vw;
@@ -444,14 +446,13 @@ hr {
     max-width: 111.111vw;
     line-height: 1.5;
     padding: 12.5vw 4.444vw;
-    max-width: 72.222vw;
+    max-width: 75vw;
   }
   .spec__content {
     box-sizing: border-box;
     margin-top: 5.556vw;
     font-size: 3.333vw;
     color: #fff;
-    letter-spacing: -0.167vw;
     line-height: 1.34;
   }
   .spec__image {
@@ -517,7 +518,6 @@ hr {
   .story__text-box {
     margin: 0 auto;
     max-width: 83.333vw;
-    letter-spacing: -0.167vw;
   }
   .story__text {
     margin-top: 2.778vw;
@@ -559,6 +559,7 @@ hr {
     margin-left: 4.167vw;
   }
   .tag__item-sharp {
+    margin-top: -0.417vw;
     font-size: 3.333vw;
   }
   .tag__item-dot {
@@ -568,13 +569,13 @@ hr {
   }
   html {
     overflow: scroll;
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: "corporatelogo", "Noto Sans JP", sans-serif;
     font-size: 12px;
     scrollbar-width: none;
     -ms-overflow-style: none;
   }
   body {
-    font: 3.889vw/1.5 "Noto Sans JP", sans-serif;
+    font: 3.889vw/1.5 "corporatelogo", "Noto Sans JP", sans-serif;
     font-weight: normal;
     -webkit-font-size-adjust: 100%;
     color: #000;
@@ -598,7 +599,7 @@ hr {
     image-rendering: auto;
   }
   button {
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: "corporatelogo", "Noto Sans JP", sans-serif;
     font-size: 3.889vw;
     cursor: pointer;
     background-color: #000;
@@ -607,7 +608,7 @@ hr {
   input,
   select,
   textarea {
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: "corporatelogo", "Noto Sans JP", sans-serif;
     font-size: 3.889vw;
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -648,6 +649,10 @@ hr {
   }
 }
 @media screen and (width >= 767px), print {
+  @font-face {
+    font-family: "corporatelogo";
+    src: url("../font/bold.woff") format("woff"), url("../font/medium.woff") format("woff");
+  }
   .character {
     position: relative;
     font-weight: 700;
@@ -675,7 +680,6 @@ hr {
     margin-top: 35px;
     font-size: 1.6rem;
     color: #000;
-    letter-spacing: -0.6px;
     height: 700px;
     z-index: 2;
   }
@@ -697,7 +701,7 @@ hr {
   .character__name-en {
     margin-top: 8px;
     color: #000;
-    letter-spacing: 7px;
+    letter-spacing: 8px;
     font-weight: 900;
   }
   .character__name-cv {
@@ -975,14 +979,13 @@ hr {
     padding: 80px 0;
     max-width: 800px;
     line-height: 1.5;
-    max-width: 31rem;
+    max-width: 35rem;
   }
   .spec__content {
     box-sizing: border-box;
     margin-top: 3.5rem;
     font-size: 1.8rem;
     color: #fff;
-    letter-spacing: -0.6px;
     line-height: 1.34;
   }
   .spec__image {
@@ -1000,7 +1003,7 @@ hr {
   }
   .spec__data-term {
     color: #515a7b;
-    width: 100px;
+    width: 120px;
   }
   .spec__data-desc {
     box-sizing: border-box;
@@ -1048,7 +1051,6 @@ hr {
     margin: 0 auto;
     max-width: 500px;
     text-align: center;
-    letter-spacing: 1.5px;
   }
   .story__text {
     margin-top: 20px;
@@ -1107,7 +1109,7 @@ hr {
   }
   body {
     box-sizing: border-box;
-    font: 1.6rem/1.5 "Noto Sans JP", sans-serif;
+    font: 1.6rem/1.5 "corporatelogo", "Noto Sans JP", sans-serif;
     font-weight: 500;
     color: #000;
     letter-spacing: 0.01em;
@@ -1134,7 +1136,7 @@ hr {
     vertical-align: middle;
   }
   button {
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: "corporatelogo", "Noto Sans JP", sans-serif;
     font-size: 1.6rem;
     font-weight: 500;
     cursor: pointer;
@@ -1144,7 +1146,7 @@ hr {
   input,
   select,
   textarea {
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: "corporatelogo", "Noto Sans JP", sans-serif;
     font-size: 1.6rem;
     font-weight: 500;
     -webkit-appearance: none;
