@@ -17,7 +17,7 @@
     filter: drop-shadow(0 vw(5) vw(2) rgba(0, 0, 0, 0.25));
 
     &:nth-child(1) {
-      top: 20px;
+      top: 3%;
       right: vw(5);
       width: vw(100);
 
@@ -29,7 +29,7 @@
     }
 
     &:nth-child(2) {
-      top: 55px;
+      top: 15%;
       left: vw(5);
       width: vw(100);
 
@@ -41,19 +41,19 @@
     }
 
     &:nth-child(3) {
-      bottom: 270px;
+      top: 35%;
       right: vw(0);
       width: vw(80);
     }
 
     &:nth-child(4) {
-      bottom: 190px;
+      bottom: 40%;
       left: vw(5);
       width: vw(90);
     }
 
     &:nth-child(5) {
-      bottom:  120px;
+      bottom: 30%;
       right: vw(15);
       width: vw(60);
     }

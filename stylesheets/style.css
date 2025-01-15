@@ -358,7 +358,7 @@ hr {
     filter: drop-shadow(0 1.389vw 0.556vw rgba(0, 0, 0, 0.25));
   }
   .parts__item:nth-child(1) {
-    top: 20px;
+    top: 3%;
     right: 1.389vw;
     width: 27.778vw;
   }
@@ -368,7 +368,7 @@ hr {
     width: 26.389vw;
   }
   .parts__item:nth-child(2) {
-    top: 55px;
+    top: 15%;
     left: 1.389vw;
     width: 27.778vw;
   }
@@ -378,17 +378,17 @@ hr {
     width: 26.389vw;
   }
   .parts__item:nth-child(3) {
-    bottom: 270px;
+    top: 35%;
     right: 0vw;
     width: 22.222vw;
   }
   .parts__item:nth-child(4) {
-    bottom: 190px;
+    bottom: 40%;
     left: 1.389vw;
     width: 25vw;
   }
   .parts__item:nth-child(5) {
-    bottom: 120px;
+    bottom: 30%;
     right: 4.167vw;
     width: 16.667vw;
   }
