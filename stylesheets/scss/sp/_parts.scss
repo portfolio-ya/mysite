@@ -19,7 +19,7 @@
     &:nth-child(1) {
       top: vw(30);
       right: vw(5);
-      width: vw(100);
+      width: vw(80);
 
       #{$p}--spec & {
         top: 10%;
@@ -31,7 +31,7 @@
     &:nth-child(2) {
       top: vw(130);
       left: vw(5);
-      width: vw(100);
+      width: vw(80);
 
       #{$p}--spec & {
         top: 60%;
@@ -43,19 +43,19 @@
     &:nth-child(3) {
       top: vw(250);
       right: vw(0);
-      width: vw(80);
+      width: vw(65);
     }
 
     &:nth-child(4) {
       bottom: vw(170);
       left: vw(5);
-      width: vw(90);
+      width: vw(75);
     }
 
     &:nth-child(5) {
       bottom: vw(90);
       right: vw(15);
-      width: vw(60);
+      width: vw(55);
     }
   }
 

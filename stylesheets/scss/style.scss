@@ -13,7 +13,7 @@
 // definitions
 @import "variables";
 
-@media screen and (width <= 766.9px) {
+@media screen and (width <= 499.9px) {
   // 画面サイズが959.9pxまではここを読み込む
   // definitions
   @import "sp/function", "sp/variables", "sp/mixin", "sp/character", "sp/footer", "sp/gallery", "sp/heading", "sp/mv", "sp/parts","sp/spec", "sp/story", "sp/tag";
@@ -22,7 +22,16 @@
   @import "sp/base";
 }
 
-@media screen and (width >= 767px), print {
+@media screen and (width >= 500px ) and (width <= 959.9px ) {
+  // 画面サイズが959.9pxまではここを読み込む
+  // definitions
+  @import "tb/function", "tb/variables", "tb/mixin", "tb/character", "tb/footer", "tb/gallery", "tb/heading", "tb/mv", "tb/parts","tb/spec", "tb/story", "tb/tag";
+
+  // ayout
+  @import "tb/base";
+}
+
+@media screen and (width >= 960px), print {
   // 画面サイズが960pxからはここを読み込む
 
   // definitions
