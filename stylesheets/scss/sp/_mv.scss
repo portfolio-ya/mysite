@@ -1,7 +1,7 @@
 .mv {
   overflow: hidden;
   position: relative;
-  height: vw(600);
+  height: 600px;
 
   &::before {
     content: "";
@@ -15,7 +15,7 @@
 
   &__inner {
     position: relative;
-    height: vw(600);
+    height: 600px;
 
     &::before {
       content: "";
